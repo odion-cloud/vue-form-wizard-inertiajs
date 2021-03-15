@@ -408,11 +408,7 @@
         this.activateTabAndCheckStep(this.activeTabIndex)
         return true
       },
-      tryChangeRoute (tab) {
-        if (this.$router && tab.route) {
-          this.$router.push(tab.route)
-        }
-      },
+
       checkRouteChange (route) {
         let matchingTabIndex = -1
         let matchingTab = this.tabs.find((tab, index) => {
@@ -439,7 +435,6 @@
         if (tab) {
           tab.active = true
           tab.checked = true
-          this.tryChangeRoute(tab)
         }
       },
       activateTabAndCheckStep (index) {

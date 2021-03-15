@@ -44,9 +44,6 @@
       afterChange: {
         type: Function
       },
-      route: {
-        type: [String, Object]
-      },
       additionalInfo: {
         type: Object,
         default: () => {}
